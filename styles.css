@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+/*menu*/
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+  z-index: 100;
+}
+nav {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+.menu a {
+  display: block;
+  padding: 30px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: black;
+  font-family: "Assistant", sans-serif;
+  font-weight: 100;
+  cursor: pointer;
+}
+.menu a:hover {
+  font-weight: 1000;
+}
+
+.logo {
+  margin-right: auto; /* for at flytte logoet helt til venstre*/
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  font-weight: 1000;
+  border: 0.5px solid black;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+.burger .line {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+h1 {
+  font-family: "Assistant", sans-serif;
+  font-size: 3rem;
+  margin: 5%;
+  font-weight: 1000;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Assistant", sans-serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.discounted {
+  font-family: "Montserrat", sans-serif;
+}
+
+.produktnavn {
+  font-size: 1.7rem;
+}
+
+.linksforside a {
+  color: black;
+}
+
+.h1forside {
+  font-size: 7rem;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+label {
+  font-family: "Montserrat", sans-serif;
+}
+
+.kategorier {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  text-align: center;
+  margin: 5%;
+}
+
+.kategorier a {
+  text-decoration: none;
+  padding: 50px;
+  color: black;
+
+  font-size: 1.5rem;
+  border-radius: 20px;
+  border: 1px solid salmon;
+}
+.produktliste {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 5%;
+  gap: 100px;
+}
+
+.produktliste a {
+  text-decoration: none;
+  color: black;
+}
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5%;
+  gap: 100px;
+}
+
+.links {
+  margin: 5%;
+}
+
+.flex_5 {
+  display: flex;
+  gap: 10px;
+}
+
+.str {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid salmon;
+  padding: 10px;
+}
+
+/*brødkrummesti*/
+
+.brodkrummesti {
+  margin-left: 5%;
+  padding-top: 3%;
+  font-family: "Assistant", sans-serif;
+  font-weight: 100;
+}
+
+.brodkrummesti a {
+  text-decoration: none;
+  color: black;
+}
+
+/*knap*/
+.kurv_knap {
+  border: 2px solid salmon;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1rem;
+  align-items: center;
+  background-color: white;
+}
+
+.kurv_knap:hover {
+  font-weight: 700;
+}
+
+.nasteside_knap {
+  border: 2px solid salmon;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  font-size: 1rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/*menu mobil*/
+@media (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    margin-right: 20px;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+  nav.active .menu {
+    display: block;
+    background-color: #f6f2e5;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+  nav.active .menu a {
+    font-size: 3cqw;
+  }
+  .icon-container {
+    margin-right: 10%;
+  }
+  .logo img {
+    width: 40px;
+  }
+}
+/*mobil*/
+@media (max-width: 800px) {
+  .produktliste {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .kategorier {
+    grid-template-columns: 1fr;
+  }
+
+  .grid_1_1 {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

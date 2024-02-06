@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>produktliste</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <p>FashionRUs</p>
+            </a>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="">Kategorier</a></li>
+                <li><a href="">Brands</a></li>
+                <li><a href="">Sæsoner</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="brodkrummesti">
+        <a href="index.html">Hjem</a> /
+        <a href="kategori.html">Kategorier</a> /
+        <span>Produktliste</span>
+    </div>
+    <h1>Apparel</h1>
+    <main class="produktliste">
+        <template id="smallProductTemplate">
+            <a class="link_produkt" href="produkt.html">
+                <article class="smallProduct">
+                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="">
+                    <h3>Name</h3>
+                    <h4>Brands</h4>
+                    <h5><span>Prev.</span> Price</h5>
+                    <br>
+                    <div class="discounted">
+                        <p>Now DKK 1499,- </p>
+                        <p> -34% </p>
+                    </div>
+                </article>
+            </a>
+        </template>
+
+        <!--
+        <div>
+            <a class="nasteside_knap" href="">Næste side</a>
+        </div> -->
+
+
+    </main>
+    <footer></footer>
+    <script src="menu.js"></script>
+    <script src="produktliste.js"></script>
+</body>
+
+</html>
