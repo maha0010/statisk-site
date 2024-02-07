@@ -218,6 +218,32 @@ label {
   padding-right: 5%;
 }
 
+.soldout {
+  display: none;
+}
+
+article.soldOut .soldout {
+  display: block;
+  color: red;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid black;
+  margin-top: 5%;
+}
+
+.discounted {
+  display: none;
+}
+
+article.discount .discounted {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 10px;
+  color: rebeccapurple;
+}
+
 /*menu mobil*/
 @media (max-width: 800px) {
   .menu {

@@ -43,7 +43,7 @@
     <main class="produktliste">
         <template id="smallProductTemplate">
             <a class="link_produkt" href="produkt.html">
-                <article class="smallProduct">
+                <article id="discountarticle" class="smallProduct">
                     <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="">
                     <h3>Name</h3>
                     <h4>Brands</h4>
@@ -53,10 +53,31 @@
                         <p>Now DKK 1499,- </p>
                         <p> -34% </p>
                     </div>
+                    <div class="soldout">
+                        <p>Udsolgt</p>
+                    </div>
                 </article>
             </a>
         </template>
 
+        <template id="smallProductTemplate">
+            <a class="link_produkt" href="produkt.html">
+                <article id="soldoutarticle" class="smallProduct">
+                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="">
+                    <h3>Name</h3>
+                    <h4>Brands</h4>
+                    <h5><span>Prev.</span> Price</h5>
+                    <br>
+                    <div class="discounted">
+                        <p>Now DKK 1499,- </p>
+                        <p> -34% </p>
+                    </div>
+                    <div class="soldout">
+                        <p>Udsolgt</p>
+                    </div>
+                </article>
+            </a>
+        </template>
         <!--
         <div>
             <a class="nasteside_knap" href="">Næste side</a>
